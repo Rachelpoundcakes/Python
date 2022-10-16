@@ -18,3 +18,4 @@ content = BeautifulStoneSoup(response, content, 'html.parser')
 containers = content.find('span', {'data-test': 'instrument-price-last'})
 
 print(containers.text)
+get_exchange_rate('usd', 'krw')
