@@ -36,7 +36,7 @@ image = Image.open(byte)
 # image = Image.open(BytesIO(requests.get(image_url).content))
 
 # 이미지 확인
-image
+print(image)
 
 # 헤더 정보 셋팅, 옵션 잡아주기(parameter)- MS visualFeatures 문서 보고 지정하기.
 headers = {'Ocp-Apim-Subscription-key': subscription_key}
@@ -52,9 +52,9 @@ response = requests.post(analyze_url, headers = headers, params = params, json =
 result = response.json()
 
 # Json 포맷으로 결과 출력됨
-result
+print(result)
 
 # Json으로 나온 결과를 뽑아내기
 # [0]은 cations의 0번째 값 [text]
 image_caption = result['description']['captions'][0]['text']
-image_caption
+print(image_caption)

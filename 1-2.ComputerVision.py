@@ -12,7 +12,7 @@ image_url = 'https://previews.123rf.com/images/paylessimages/paylessimages1502/p
 # 이미지 불러오기(한줄로 간단하게 씀)
 image = Image.open(BytesIO(requests.get(image_url).content))
 
-image
+print(image)
 
 # 헤더 정보 셋팅, 옵션 잡아주기(parameter)- MS visualFeatures 문서 보고 지정하기.
 headers = {'Ocp-Apim-Subscription-key': subscription_key}
@@ -23,7 +23,7 @@ response = requests.post(objectDetection_url, headers = headers, params = params
 
 # result는 json의 형태로 가져올 것이다
 result = response.json()
-result
+print(result)
 
 # 다음과 같은 형태로 출력됨
 # ---> {'objects': [{'rectangle': {'x': 211, 'y':35, 'w':349, 'h':407...}] }
@@ -52,14 +52,14 @@ def DrawBox(detectData):
     w = rect['w']
     h = rect['h']
 
-#사각형을 그리겠다
+#사각형 그리기
     draw.rectangle(((x, y), (x+w, y+h)), outline='red')
 
-#object에 있는 것을 뽑아내겠다
+#object에 있는 것 추출하기
     objectName = obj['object']
     draw.text((x,y), objectName, fill='red')
 
     DrawBox(result)
     # 결과 ex {'x': 211, 'y': 35, 'w': 349, 'h': 407}
 
-    image
+    print(image)
