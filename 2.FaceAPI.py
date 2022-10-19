@@ -3,17 +3,17 @@ import requests
 from PIL import Image, ImageDraw, ImageFont
 from io import BytesIO
 
-subscription_key = '2b7132593e37491e8597235dbee959fe'
-face_api_url = 'https://labuser79face.cognitiveservices.azure.com/face/v1.0/detect'
+subscription_key = ''
+face_api_url = '/v1.0/detect'
 
 
 #Class, library, Package 대문자 관례
-#지역변수, 파라메타 소문자로 관례
+#지역변수, 파라미터 소문자로 관례
 #addr, msg 줄임말은 배제
 #두 단어가 합쳐지면 두 번째 단어는 대문자
 #상수는 전체가 대문자  const MAX_USER=100
 
-image_url = 'http://image.koreatimes.com/article/2021/05/10/20210510094734601.jpg'
+image_url = '.jpg'
 image = Image.open(BytesIO(requests.get(image_url).content))
 print(image)
 
