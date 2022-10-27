@@ -18,7 +18,7 @@ print('타깃의 이름: \n', iris_dataset['target_names'])
 
 print('특징의 이름: \n', iris_dataset['feature_names'])
 
-#여기에 있는 데이터는 넘파이 배열로 되어 있다
+#여기에 있는 데이터는 넘파이 배열로 되어 있다.
 print('data의 타입:', type(iris_dataset['data']))
 
 print('data의 크기', iris_dataset['data'].shape)
@@ -36,7 +36,7 @@ print('target의 크기', iris_dataset['target'].shape)
 
 print('target의 내용', 'target:\n', iris_dataset['target'])
 
-#라벨링 되어 있는 데이터이다. 이 데이터를 가지고 시각화하거나 쪼갤 수 있다,
+#라벨링 되어 있는 데이터이다. 이 데이터를 가지고 시각화하거나 쪼갤 수 있다.
 
 #데이터의 준비.
 #학습용, 테스트용 데이터를 쪼개준다. 잘 섞어 주어야 한다!!
