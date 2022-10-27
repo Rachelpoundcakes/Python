@@ -1,5 +1,5 @@
 import numpy as np 
-# as np라고 줄여서 부르겠다
+# as np라고 줄여서 부르겠다는 의미
 arr = np.array({1, 2, 3, 4})
 print(arr)
 
