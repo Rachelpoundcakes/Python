@@ -7,7 +7,7 @@ print(iris_dataset.DESCR)
 
 print('iris_dataset의 키:\n', iris_dataset.keys())
 
-#라벨 데이터는 타켓 항목에, ESCR에는 설명이 들어있다.
+#라벨 데이터는 타켓 항목에, DESCR에는 설명이 들어있다.
 
 #배열로 가져오기(결과는 똑같다)
 iris_dataset['DESCR']
