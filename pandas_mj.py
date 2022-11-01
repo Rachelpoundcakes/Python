@@ -3,7 +3,7 @@
 
 from pandas import Series
 
-fruit = Series([2500,3800,1200,600], index=['appple','banana','peer','cherry'])
+fruit = Series([2500,3800,1200,600], index=['appple','banana','pear','cherry'])
 
 print(fruit)
 
@@ -12,7 +12,7 @@ print(fruit.values)
 print(fruit.index)
 
 #Dict 표현
-fruitData = {'apple':2500,'banana':3800,'peer':1200,'cherry':600}
+fruitData = {'apple':2500,'banana':3800,'pear':1200,'cherry':600}
 fruit = Series(fruitData)
 
 print(type(fruitData))
@@ -29,7 +29,7 @@ print(fruit)
 
 # DataFrame
 
-fruitData = {'fruitName':['apple','banana','cherry','peer'],
+fruitData = {'fruitName':['apple','banana','cherry','pear'],
              'fruitPrice':[2500,3800,6000,1200],
              'num':[10,5,3,8]
              }
@@ -93,10 +93,10 @@ print(newFruitFrame)
 
 print(fruit)
 
-fruit[:'peer']
+fruit[:'pear']
 
 # Series 객체의 기본 연산
-fruit1 = Series([5,9,10,3],index=['apple','banana','cherry','peer'])
+fruit1 = Series([5,9,10,3],index=['apple','banana','cherry','pear'])
 fruit2 = Series([3,2,9,5,10],index=['apple','orange','banana','cherry','mango'])
 
 newFruit = fruit1 + fruit2
@@ -106,7 +106,7 @@ print(newFruit)
 fruitData1 = {'Ohio':[4,8,3,5],'Texas':[0,1,2,3]}
 fruitData2 = {'Ohio':[3,0,2,1,7],'Colorado':[5,4,3,6,0]}
 fruitFrame1 = DataFrame(fruitData1, columns=['Ohio','Texas'], 
-              index=['apple','banana','cherry','peer'])
+              index=['apple','banana','cherry','pear'])
 fruitFrame2 = DataFrame(fruitData2, columns=['Ohio','Colorado'],
               index=['apple','orange','banana','cherry','mango'])
 
