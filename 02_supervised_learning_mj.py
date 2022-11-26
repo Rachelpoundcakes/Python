@@ -50,6 +50,8 @@ sim_lr.fit(X_train['RM'].values.reshape((-1,1)) ,y_train)
 #예측치. 룸의 개수로 예측
 y_pred = sim_lr.predict(X_test['RM'].values.reshape((-1,1)))
 
+print(y_pred)
+
 #결과 살펴보기
 #결정계수로 학습한 것을 확인. 원본데이터와 예측값 차이 비교하기
 from sklearn.metrics import r2_score
