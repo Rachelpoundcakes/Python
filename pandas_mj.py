@@ -1,6 +1,7 @@
 #pip install pandas
 #Python에 pandas가 내장되어 있으므로 설치할 필요 X
 
+#패키지 불러오기
 from pandas import Series
 
 fruit = Series([2500,3800,1200,600], index=['appple','banana','pear','cherry'])
