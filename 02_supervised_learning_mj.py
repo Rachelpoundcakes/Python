@@ -183,7 +183,7 @@ print('다중 MLP 회귀, R2: {:.4f}'.format(r2_score(y_test,y_pred)))
 #max_iter 추가
 from sklearn.neural_network import MLPRegressor
 mlp_regr = MLPRegressor(solver='adam',hidden_layer_sizes=100,max_iter=1000) #solver: lbfgs, sgd, adam 등이 있다.
-#여기까지 멀티 레이서 퍼셉트론 준비 완료
+#여기까지 멀티 레이어 퍼셉트론 준비 완료
 
 mlp_regr.fit(X_train, y_train)
 y_pred = mlp_regr.predict(X_test)
