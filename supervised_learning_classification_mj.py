@@ -60,7 +60,7 @@ svc.fit(X_train, y_train)
 y_pred = svc.predict(X_test)
 print('서포트 벡터 머신, 정확도: {:.2f}'.format(accuracy_score(y_test, y_pred)))
 
-# Decsion Tree 결정 트리
+# Decision Tree 결정 트리
 from sklearn.tree import DecisionTreeClassifier
 dt = DecisionTreeClassifier(max_depth=5)
 
