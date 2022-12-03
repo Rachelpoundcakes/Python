@@ -41,6 +41,8 @@ kmeans.fit(data)
 
 cluster = kmeans.predict(data)
 
+print(cluster)
+
 plt.scatter(data[:,0],data[:,1], c=cluster,
             edgecolor='black',linewidth=1)
 
