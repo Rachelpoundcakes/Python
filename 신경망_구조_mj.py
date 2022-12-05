@@ -130,6 +130,12 @@ def step_function(x):
   else:
     return 0
 
+def step_function_for_numpy(x):
+  y = x > 0
+  value  = y.astype(np.int)
+
+  return value
+
 print(step_function(-3))
 print(step_function(5))
 
@@ -145,6 +151,32 @@ print(sigmoid(-3))
 plt.grid()
 x = np.arange(-5,5,0.01)
 y1 = sigmoid(x)
-y2 = step_function(x)
+y2 = step_function_for_numpy(x)
 
 plt.plot(x, y1,'r-')
+plt.plot(x, y2, 'b--')
+
+# ReLu(x)
+
+def ReLu(x):
+  if x > 0:
+    return X
+  else:
+    return 0
+
+# Identity Function (항등 함수)
+def identify_function(x):
+  return x
+
+# Softmax(a)
+def Softmax(a):
+  exp_a = np.exp(a)
+  sum_exp_a = np.sum(exp_a)
+  y = exp_a / sum_exp_a
+
+  return y
+
+a = np.array([0.3,0.2,3.0,-1.2])
+print(Softmax(a))
+print(np.sum(Softmax(a)))
+
