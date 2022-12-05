@@ -41,7 +41,7 @@ plt.xlabel('x')
 plt.ylabel('y')
 plt.title('Quadratic Function')
 
-# 삼차함수(다항함수) y=ax3 + bx2 + cx + d
+# 삼차함수(다항함수) y=ax^3 + bx^2 + cx + d
 
 def cubic_function(x):
   a = 4
