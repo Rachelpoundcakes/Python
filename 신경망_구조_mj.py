@@ -140,7 +140,7 @@ def step_function_for_numpy(x):
 print(step_function(-3))
 print(step_function(5))
 
-# 시그모이드 함수 
+# 시그모이드 함수 #np.exp(-x) -> 지수함수
 
 def sigmoid(x):
   value = 1 / (1 + np.exp(-x))
