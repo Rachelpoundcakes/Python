@@ -166,7 +166,7 @@ def ReLu(x):
     return 0
 
 # Identity Function (항등 함수)
-def identify_function(x):
+def identity_function(x):
   return x
 
 # Softmax(a)
