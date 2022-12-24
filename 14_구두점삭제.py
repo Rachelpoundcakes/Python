@@ -8,7 +8,7 @@ text_data = ["I am Rachel Kim. I, love watching drama...",
             "I lived in Canada in 2012. It was awesome!!",
             "To improve your English skills, you should speak a lot."]
 punctuation = dict.fromkeys(i for i in range(sys.maxunicode)
-                            if unicodedata.category(chr(i)).startswith('p'))
+                            if unicodedata.category(chr(i)).startswith('P'))
 
 # 문자열의 구두점 삭제
 test = [string.translate(punctuation) for string in text_data]
